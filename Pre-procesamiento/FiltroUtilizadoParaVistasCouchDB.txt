@@ -1,0 +1,4 @@
+function(doc) {
+if(doc.place.country_code=="EC" ) 
+ emit(doc.id, doc.text);
+}
