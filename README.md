@@ -15,17 +15,20 @@ Pycharm es un IDE que soporta lenguajes XML, HTML, XHTML y Python. Este último 
 Logstash: Es un pipeline de procesamiento de datos que recoge los mismos de múltiples fuentes.
 Elasticsearch: Permite hacer busqueda sobre texto y realizar análisis de sentimientos.
 Kibana: Permite visualizar los datos de Elasticsearch. Presenta la información usando gráficos de barras, líneas, mapas o pasteles.
+River: Plugin para ElasticSearch que permite indexar los documentos de couchdb para poder visualizarlos en ElasticSearch.
 
 
 INSTRUCCIONES DE INSTALACIÓN Y FUNCIONAMIENTO
 
 REQUISITOS PREVIOS PARA EL FUNCIONAMIENTO DEL PROYECTO
 
-Tutorial para instalar couchDB: https://www.digitalocean.com/community/tutorials/how-to-install-couchdb-and-futon-on-ubuntu-14-04
+Tutorial para instalar couchDB versión 1.6.1: https://www.digitalocean.com/community/tutorials/how-to-install-couchdb-and-futon-on-ubuntu-14-04
 
-Tutorial para instalar PycharmIDE:https://www.jetbrains.com/pycharm/download/#section=linux
+Tutorial para instalar PycharmIDE :https://www.jetbrains.com/pycharm/download/#section=linux
 
-Tutorial para intalar Elasticsearch, Kibana, Logstash, nginx: https://www.digitalocean.com/community/tutorials/how-to-install-elasticsearch-logstash-and-kibana-elk-stack-on-ubuntu-14-04
+Tutorial para instalar Elasticsearch, Kibana, Logstash, nginx: https://www.digitalocean.com/community/tutorials/how-to-install-elasticsearch-logstash-and-kibana-elk-stack-on-ubuntu-14-04
+
+Repositorio de versionamiento del plugin River versión 2.5: https://github.com/elastic/elasticsearch-river-couchdb
 
 Para realizar el presente proyecto se debe seguir en orden secuencial las fases del mismo.
 Por lo tanto, se debe revisar el contenido de la primera carpeta correspondiente a Adquisición de Datos.
