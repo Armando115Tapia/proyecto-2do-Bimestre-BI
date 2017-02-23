@@ -1,3 +1,9 @@
+
+/*
+El presente filtro está escrito en código javascript y permite realizar un filtrado de datos dentro de couchdb
+para crear una vista. En el filtro se compara cada información del tweet, específicamente el lugar donde se originó para desechar datos provenientes de Perú y Colombia. Se imprime el id y el texto del tweet en la vista.
+*/
+
 function(doc) {
 if(doc.place.country_code=="EC" ) 
  emit(doc.id, doc.text);
