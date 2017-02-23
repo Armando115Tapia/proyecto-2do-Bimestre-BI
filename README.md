@@ -22,11 +22,11 @@ INSTRUCCIONES DE INSTALACIÓN Y FUNCIONAMIENTO
 
 REQUISITOS PREVIOS PARA EL FUNCIONAMIENTO DEL PROYECTO
 
-Tutorial para instalar couchDB versión 1.6.1: https://www.digitalocean.com/community/tutorials/how-to-install-couchdb-and-futon-on-ubuntu-14-04
+Tutorial para instalar CouchDB versión 1.6.1: https://www.digitalocean.com/community/tutorials/how-to-install-couchdb-and-futon-on-ubuntu-14-04
 
-Tutorial para instalar PycharmIDE :https://www.jetbrains.com/pycharm/download/#section=linux
+Tutorial para instalar Pycharm Community 2016 versión 3.2 :https://www.jetbrains.com/pycharm/download/#section=linux
 
-Tutorial para instalar Elasticsearch, Kibana, Logstash, nginx: https://www.digitalocean.com/community/tutorials/how-to-install-elasticsearch-logstash-and-kibana-elk-stack-on-ubuntu-14-04
+Tutorial para instalar Elasticsearch, Kibana, Logstash, Nginx: https://www.digitalocean.com/community/tutorials/how-to-install-elasticsearch-logstash-and-kibana-elk-stack-on-ubuntu-14-04
 
 Repositorio de versionamiento del plugin River versión 2.5: https://github.com/elastic/elasticsearch-river-couchdb
 
