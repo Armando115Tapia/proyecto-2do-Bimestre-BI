@@ -2,9 +2,10 @@
 DISEÑO E IMPLEMENTACIÓN DE UN SISTEMA CLASIFICADOS DE SENTIMIENTOS PARA POLITICA
 
 COLABORADORES:
-              Díaz Esteban
-              Muñoz Richard
-              Tapia Armando
+              
+Díaz Esteban            
+Muñoz Richard
+Tapia Armando
               
 DESCRIPCIÓN:
 
