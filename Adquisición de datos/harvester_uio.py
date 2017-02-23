@@ -1,7 +1,6 @@
 
+#Código compartido por la Ing. Elisa Mena de la Facultad de Ingeniería en Sistemas de la Escuela Politécnica Nacional
 '''
-
- 
  QUITO 
 ==============
 '''
@@ -13,11 +12,13 @@ from tweepy.streaming import StreamListener
 import json
  
 #encoding:utf-8 
-##########API CREDENTIALS ############   Poner sus credenciales del API de dev de Twitter
-ckey = "woSkEr2S3SqDEc5LP7d16viE0"
-csecret = "D8ENCpcgjNd9CIREnlf49wk9KLescGwUQYVdbiPkv4ZfYJ25YV"
-atoken = "775384416902320128-41ZI74CIZ4LDhGlsu3bw2LSYRH3G4cw"
-asecret = "8pdxewymMZOgHSJZ4SGv6qFpWOIQzIqHUPxJTvJNBmGUc"
+
+##########API CREDENTIALS ############   
+#Colocar credenciales del API de dev de Twitter
+ckey = ""
+csecret = ""
+atoken = ""
+asecret = ""
  
 class listener(StreamListener):
  
@@ -49,8 +50,7 @@ db_name = sys.argv[2]
  
  
 '''========couchdb'=========='''
-server = couchdb.Server('http://'+URL+':5984/')  #('http://245.106.43.184:5984/') poner la url de su base de datos
-# server = couchdb.Server('http://localhost:5984/_utils/document.html?tweets/0cd20a809b94db5eb1f75cef9b0010a8')
+server = couchdb.Server('http://'+URL+':5984/')  #Colocar URL de base de datos
  
 
 try:
@@ -63,5 +63,5 @@ except:
  
  
 '''===============LOCATIONS=============='''
-twitterStream.filter(locations=[-78.593445,-0.370099,-78.386078,-0.081711])  #QUITO 
+twitterStream.filter(locations=[-78.593445,-0.370099,-78.386078,-0.081711])  #Coordenadas QUITO 
 
