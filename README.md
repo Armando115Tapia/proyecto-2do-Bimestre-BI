@@ -10,11 +10,19 @@ Tapia Armando
 DESCRIPCIÓN:
 
 Durante el proyecto se trabajó con las herramientas CouchDB, ElasticSearch, Logstash, Kibana y Pycharm.
+
 CouchDB se utilizó para almacenar y filtrar los tweets.  
-Pycharm es un IDE que soporta lenguajes XML, HTML, XHTML y Python. Este último se utilizó para escribir los scripts que automatizaron la limpieza y el análisis de los tweets.
+
+Pycharm es un IDE que soporta lenguajes XML, HTML, XHTML y Python.
+Este último se utilizó para escribir los scripts que automatizaron la limpieza y el análisis de los tweets.
+
+
 Logstash: Es un pipeline de procesamiento de datos que recoge los mismos de múltiples fuentes.
+
 Elasticsearch: Permite hacer busqueda sobre texto y realizar análisis de sentimientos.
+
 Kibana: Permite visualizar los datos de Elasticsearch. Presenta la información usando gráficos de barras, líneas, mapas o pasteles.
+
 River: Plugin para ElasticSearch que permite indexar los documentos de couchdb para poder visualizarlos en ElasticSearch.
 
 
