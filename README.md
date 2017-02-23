@@ -5,7 +5,6 @@ COLABORADORES:
               
 Díaz Esteban            
 Muñoz Richard
-
 Tapia Armando
               
 DESCRIPCIÓN:
