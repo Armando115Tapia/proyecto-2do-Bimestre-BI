@@ -1,3 +1,8 @@
+#Código escrito en Python semejante al archivo harvester_uio.py que permite extraer 
+#todos los tweets que conforman una vista e imprimirlos a un archivo txt
+#Colocar las credenciales de desarrollador de Twitter
+#Colocar el nombre correspondiente a la base de datos
+
 import couchdb
 import sys
 import urllib2
@@ -8,13 +13,14 @@ from tweepy.streaming import StreamListener
 import json
 
 # encoding:utf-8
-##########API CREDENTIALS ############   Poner sus credenciales del API de dev de Twitter
-ckey = "ZYF88A12e7LeuXJTAM3yEKNAf"
-csecret = "MKAXjIjXVWOzpA7PPFdi69iWzSOpRPHSlx9jdlO1IqddFjmZd5"
-atoken = "121881131-Xyc6cGon0YSCEgKtaqXxiPIi6C1HYxd2sQOFXkoV"
-asecret = "kmDZXdTlwPQKjsJ7HjIqFVgJgfJlTUJlSZdPwsCTLaVkC"
+##########API CREDENTIALS ############
+ckey = ""
+csecret = ""
+atoken = ""
+asecret = ""
 
 URL = 'localhost'
+#Colocar nombre de base de datos
 db_name = 'new_database'
 '''========couchdb'=========='''
 server = couchdb.Server('http://' + URL + ':5984/')
@@ -28,7 +34,6 @@ except:
     sys.stderr.write("Error: DB not found. Closing...\n")
     sys.exit()
 
-'''===============LOCATIONS=============='''
 url = 'http://localhost:5984/new_database/_design/1/_view/esteban1'
 req = urllib2.Request(url)
 f = urllib2.urlopen(req)
