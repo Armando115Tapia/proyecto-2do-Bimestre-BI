@@ -1,5 +1,6 @@
 
-#Código compartido por la Ing. Elisa Mena de la Facultad de Ingeniería de Sistemas de la Escuela Politécnica Nacional
+#Código compartido por la Ing. Elisa Mena de la Facultad de Ingeniería 
+#de Sistemas de la Escuela Politécnica Nacional
 '''
  QUITO 
 ==============
@@ -67,4 +68,4 @@ twitterStream.filter(locations=[-78.593445,-0.370099,-78.386078,-0.081711])  #Co
 
 
 #Colocar este archivo en el escritorio de la máquina, ejecutarlo mediante el comando: 
-#
+#python harvester_uio.py localhost nombredebasededatos
