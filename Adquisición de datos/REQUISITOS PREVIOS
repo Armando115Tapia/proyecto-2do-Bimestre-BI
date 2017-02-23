@@ -1,0 +1,13 @@
+
+REQUISITOS PREVIOS
+1.- Para recolectar tweets es necesario obtener credenciales de desarrollador en la red social Twitter.
+      Video para obtener credenciales de desarrollador en Twitter: 
+      https://youtu.be/KEILpRCDrIY
+ 
+2.- Cambiar las lineas de codigo especificadas en el script de Python (harvester_uio.py) que se refieren a las credenciales de Twitter.
+      Se debe colocar un ckey, csecret, atoken y asecret.
+      
+3.- En la máquina con sistema operativo Ubuntu Linux se debe instalar CouchDB
+      Tutorial para instalar CouchDB (base de datos NoSQL) en Ubuntu:
+      https://www.digitalocean.com/community/tutorials/how-to-install-couchdb-and-futon-on-ubuntu-14-04
+
