@@ -19,7 +19,7 @@ Kibana: Permite visualizar los datos de Elasticsearch. Presenta la información 
 Instrucciones de instalación y funcionamiento:
 
 Tutorial para instalar couchDB: https://www.digitalocean.com/community/tutorials/how-to-install-couchdb-and-futon-on-ubuntu-14-04
-Tutorial para instalar PycharmIDE: 
+Tutorial para instalar PycharmIDE:https://www.jetbrains.com/pycharm/download/#section=linux
 Tutorial para intalar Elasticsearch: https://www.digitalocean.com/community/tutorials/how-to-install-elasticsearch-logstash-and-kibana-elk-stack-on-ubuntu-14-04
 
 Para realizar el presente proyecto se debe seguir en orden secuencial las fases del mismo.
