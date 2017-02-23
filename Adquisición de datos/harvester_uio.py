@@ -1,5 +1,5 @@
 
-#Código compartido por la Ing. Elisa Mena de la Facultad de Ingeniería en Sistemas de la Escuela Politécnica Nacional
+#Código compartido por la Ing. Elisa Mena de la Facultad de Ingeniería de Sistemas de la Escuela Politécnica Nacional
 '''
  QUITO 
 ==============
