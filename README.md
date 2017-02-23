@@ -16,7 +16,11 @@ Elasticsearch: Permite hacer busqueda sobre texto y realizar análisis de sentim
 Kibana: Permite visualizar los datos de Elasticsearch. Presenta la información usando gráficos de barras, líneas, mapas o pasteles.
 
 
- Instrucciones de instalación y funcionamiento:
+Instrucciones de instalación y funcionamiento:
+
+Tutorial para instalar couchDB: https://www.digitalocean.com/community/tutorials/how-to-install-couchdb-and-futon-on-ubuntu-14-04
+Tutorial para instalar PycharmIDE: 
+Tutorial para intalar Elasticsearch: https://www.digitalocean.com/community/tutorials/how-to-install-elasticsearch-logstash-and-kibana-elk-stack-on-ubuntu-14-04
 
 Para realizar el presente proyecto se debe seguir en orden secuencial las fases del mismo.
 Por lo tanto, se debe revisar el contenido de la primera carpeta correspondiente a Adquisición de Datos.
