@@ -8,6 +8,7 @@ COLABORADORES:
               
 Descripción:
 
+Durante el proyecto se trabajó con las herramientas CouchDB, ElasticSearch, Logstash, Kibana y Pycharm.
 
 
 Instrucciones de instalación y funcionamiento:
