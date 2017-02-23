@@ -65,3 +65,6 @@ except:
 '''===============LOCATIONS=============='''
 twitterStream.filter(locations=[-78.593445,-0.370099,-78.386078,-0.081711])  #Coordenadas QUITO 
 
+
+#Colocar este archivo en el escritorio de la máquina, ejecutarlo mediante el comando: 
+#
