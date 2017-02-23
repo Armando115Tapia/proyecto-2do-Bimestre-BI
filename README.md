@@ -27,21 +27,62 @@ Kibana: Permite visualizar los datos de Elasticsearch. Presenta la información 
 River: Plugin para ElasticSearch que permite indexar los documentos de couchdb para poder visualizarlos en ElasticSearch.
 
 
+
 INSTRUCCIONES DE INSTALACIÓN Y FUNCIONAMIENTO
 
-REQUISITOS PREVIOS PARA EL FUNCIONAMIENTO DEL PROYECTO
+
+<br>REQUISITOS PREVIOS PARA EL FUNCIONAMIENTO DEL PROYECTO
 
 Tutorial para instalar CouchDB versión 1.6.1: https://www.digitalocean.com/community/tutorials/how-to-install-couchdb-and-futon-on-ubuntu-14-04
+
+INSTALACION COUCHDB
+
+Pasos de Instalacion 
+ 
+sudo apt-get update
+sudo apt-get install software-properties-common -y
+sudo add-apt-repository ppa:couchdb/stable -y
+
+
+Instalacion 
+sudo apt-get remove couchdb couchdb-bin couchdb-common -yf
+sudo apt-get install couchdb -y
+curl localhost:5984
+
+
+Creacion de la BD
+curl -X PUT localhost:5984/new_database
 
 Tutorial para instalar Pycharm Community 2016 versión 3.2 :https://www.jetbrains.com/pycharm/download/#section=linux
 
 
+INSTALACION PYCHARM
+
+
+Instalación PyCharm en Linux
+
+
+Descargar el zip:
+<pycharm-professional or pycharm-community>-*.tar.gz
+
+Descomprimirlo:
+tar xfz <pycharm-professional or pycharm-community>-*.tar.gz <new_archive_folder>
+
+Cambiar al directorio /bin:
+cd <new archive folder>/<pycharm-professional or pycharm-community>-*/bin
+
+Ejecutar pycharm.sh desde el directorio /bin
+
+
 Tutorial para instalar Elasticsearch, Kibana, Logstash, Nginx: https://www.digitalocean.com/community/tutorials/how-to-install-elasticsearch-logstash-and-kibana-elk-stack-on-ubuntu-14-04
+
 
 Repositorio de versionamiento del plugin River versión 2.5: https://github.com/elastic/elasticsearch-river-couchdb
 
 
+
 INSTALACION ELASTICSEARCH, KIBANA, JAVA8, PLUGIN RIVER
+
 Prerequisitos
 
 - Ubuntu Server 14.04
@@ -117,42 +158,42 @@ curl http://127.0.0.1:9200/testdb/testdb/_search?pretty=true
 Una vez instaladas todas estas herramientas, se procede a seguir las fases del proyecto en orden secuencial.
 
 Primera fase del proyecto:
-La recoleccion o adquisicion de datos a traves del script harvester_uio.py ubicado en la carpeta "1 Adquisicion"
+<p>La recoleccion o adquisicion de datos a traves del script harvester_uio.py ubicado en la carpeta "1 Adquisicion"
 El script en python se ejecuta en linea de comandos con la siguiente estructura:
-		python harvester_uio.py localhost "nombre de base de datos"
+python harvester_uio.py localhost "nombre de base de datos"</p>
 
 Segunda fase del proyecto:
-Si se utilizan dos maquinas para la recoleccion de datos es necesario centralizar la informacion.
-Para transportar la informacion entre dos maquinas se debe seguir los siguientes pasos:
-1. Ingresar al directorio /etc/couchdb (como superusuario) que contiene los archivos de configuración del couchdb para permitir el acceso remoto.
-			comando: cd /etc/couchdb/
-2. Editar como superusuario el archivo de configuracion default.ini dentro de la carpeta couchdb.
+<p>Si se utilizan dos maquinas para la recoleccion de datos es necesario centralizar la informacion.
+Para transportar la informacion entre dos maquinas se debe seguir los siguientes pasos:</p>
+<p>1. Ingresar al directorio /etc/couchdb (como superusuario) que contiene los archivos de configuración del couchdb para permitir el acceso remoto.
+			comando: cd /etc/couchdb/</p>
+<p>2. Editar como superusuario el archivo de configuracion default.ini dentro de la carpeta couchdb.
 En la sección [httpd] comentar la línea bind_adddress con punto y coma (;) y agregar una nueva línea:
-			bind_adddress = 0.0.0.0
-3. Guardar los cambios y reinicar el servicio de couchdb.
-		sudo service couchdb restart
-4. Replicar desde la maquina principal que va a contener todos los tweets con el comando:
+			bind_adddress = 0.0.0.0</p>
+<p>3. Guardar los cambios y reinicar el servicio de couchdb.
+		sudo service couchdb restart</p>
+<p>4. Replicar desde la maquina principal que va a contener todos los tweets con el comando:</p>
 		
 
 
 Tercera fase del proyecto:
-Crear dos proyectos en Pycharm con los siguientes componentes:
-1.	Proyecto “ImprimirTweets”
-	Contiene un archivo llamado printInFile.py
-2.	Proyecto “ProcesarTweets”
-	Contiene dos archivos llamado openFile.py y deleteSpecials.py
+<p>Crear dos proyectos en Pycharm con los siguientes componentes:</p>
+<p>1.	Proyecto “ImprimirTweets”
+	Contiene un archivo llamado printInFile.py</p>
+<p>2.	Proyecto “ProcesarTweets”
+	Contiene dos archivos llamado openFile.py y deleteSpecials.py</p>
 
-Para que el procesamiento sea correcto se debe seguir el siguiente orden de ejecución:
-1.	Ejecutar archivo printInFile.py de la carpeta ImprimirTweets.
-	Se genera el archivo tweetsUIO.txt
-2.	Ejecutar archivo openFile.py de la carpeta ProcesarTweets.
-Se genera el archivo tweetValue.txt
-3.	Ejecutar archivo deleteSpecials.py de la carpeta ProcesarTweets.
-	Se genera el archivo processedTweets.txt
+<p>Para que el procesamiento sea correcto se debe seguir el siguiente orden de ejecución:</p>
+<p>1.	Ejecutar archivo printInFile.py de la carpeta ImprimirTweets.
+	Se genera el archivo tweetsUIO.txt</p>
+<p>2.	Ejecutar archivo openFile.py de la carpeta ProcesarTweets.
+Se genera el archivo tweetValue.txt</p>
+<p>3.	Ejecutar archivo deleteSpecials.py de la carpeta ProcesarTweets.
+	Se genera el archivo processedTweets.txt</p>
 
 
 Cuarta fase del proyecto:
-
+<p>configurar indice en elasticSearch e ingresar a la url: localhost:9200/_plugin/head para revisar los tweets indexados</p>
 
 
 Quinta fase del proyecto:
