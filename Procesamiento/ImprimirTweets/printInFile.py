@@ -34,10 +34,11 @@ except:
     sys.stderr.write("Error: DB not found. Closing...\n")
     sys.exit()
 
-url = 'http://localhost:5984/new_database/_design/1/_view/esteban1'
+#EJEMPLO DE URL: url = 'http://localhost:5984/new_database/_design/1/_view/tweets1'
+url = ''
 req = urllib2.Request(url)
 f = urllib2.urlopen(req)
-sys.stdout=open("tweetsUIO.txt","w")
+sys.stdout=open("tweets.txt","w")
 for x in f:
     print(x)
 sys.stdout.close()
